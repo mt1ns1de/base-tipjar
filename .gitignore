@@ -1,0 +1,30 @@
+# Node dependencies
+node_modules/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+artifacts/
+cache/
+build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Compiled contracts (if generated locally)
+typechain/
+
+# Coverage and testing
+coverage/
+coverage.json
+
+# Remix / Hardhat temporary files
+remixd/
+hardhat-network-logs/

@@ -1,0 +1,144 @@
+{
+  "abi": [[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "NotOwner",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NothingToWithdraw",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAddress",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "oldOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnerChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "message",
+        "type": "string"
+      }
+    ],
+    "name": "Tipped",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "Withdrawal",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "setOwner",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "message_",
+        "type": "string"
+      }
+    ],
+    "name": "tip",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]],
+  "bytecode": "0x608060405260405161052f38038061052f83398101604081905261002291610085565b6001600160a01b038116156100375780610039565b335b5f80546001600160a01b0319166001600160a01b039290921691821781556040517fb532073b38c83145e3e5135377a08bf9aab55bc0fd7c1179cd4fb995d2a5159c908290a3506100b2565b5f60208284031215610095575f80fd5b81516001600160a01b03811681146100ab575f80fd5b9392505050565b610470806100bf5f395ff3fe608060405260043610610041575f3560e01c806313af40351461009d5780633ccfd60b146100be5780638da5cb5b146100d2578063cb56393c1461010c575f80fd5b3661009957336001600160a01b03167f4f629a5f1c8e7fc616770a8d34896b447f3457037c40a23347478746309d73c23460405161008f9181526040602082018190525f9082015260600190565b60405180910390a2005b5f80fd5b3480156100a8575f80fd5b506100bc6100b736600461036c565b61011f565b005b3480156100c9575f80fd5b506100bc6101c9565b3480156100dd575f80fd5b505f546100f0906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6100bc61011a366004610399565b6102f2565b5f546001600160a01b03163314610149576040516330cd747160e01b815260040160405180910390fd5b6001600160a01b0381166101705760405163d92e233d60e01b815260040160405180910390fd5b5f80546040516001600160a01b03808516939216917fb532073b38c83145e3e5135377a08bf9aab55bc0fd7c1179cd4fb995d2a5159c91a35f80546001600160a01b0319166001600160a01b0392909216919091179055565b5f546001600160a01b031633146101f3576040516330cd747160e01b815260040160405180910390fd5b475f81900361021557604051630686827b60e51b815260040160405180910390fd5b5f80546040516001600160a01b039091169083908381818185875af1925050503d805f811461025f576040519150601f19603f3d011682016040523d82523d5f602084013e610264565b606091505b50509050806102ac5760405162461bcd60e51b815260206004820152600f60248201526e151c985b9cd9995c8819985a5b1959608a1b60448201526064015b60405180910390fd5b5f546040518381526001600160a01b03909116907f7fcf532c15f0a6db0bd6d0e038bea71d30d808c7d98cb3bf7268a95bf5081b65906020015b60405180910390a25050565b5f341161032f5760405162461bcd60e51b815260206004820152600b60248201526a139bc8115512081cd95b9d60aa1b60448201526064016102a3565b336001600160a01b03167f4f629a5f1c8e7fc616770a8d34896b447f3457037c40a23347478746309d73c23484846040516102e693929190610405565b5f6020828403121561037c575f80fd5b81356001600160a01b0381168114610392575f80fd5b9392505050565b5f80602083850312156103aa575f80fd5b823567ffffffffffffffff808211156103c1575f80fd5b818501915085601f8301126103d4575f80fd5b8135818111156103e2575f80fd5b8660208285010111156103f3575f80fd5b60209290920196919550909350505050565b83815260406020820152816040820152818360608301375f818301606090810191909152601f909201601f191601019291505056fea2646970667358221220f3c93e68f5796a1f0b0dbdb948e9e675169545cd9981334d93fdd903ade948b964736f6c63430008140033"
+}
