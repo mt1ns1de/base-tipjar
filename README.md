@@ -51,13 +51,11 @@ A user sends 0.01 ETH with a message:
 The contract emits the event:
 
 solidity
-Копіювати код
 event Tipped(address from, uint256 amount, string message);
 The owner later calls withdraw() to collect the accumulated tips.
 
 📦 Repository Structure
 bash
-Копіювати код
 /contracts/BaseTipJar.sol    # main smart contract
 /scripts/deploy.js           # deployment script
 /.env.example                # environment configuration template
@@ -65,7 +63,6 @@ bash
 /README.md
 🧰 Local Development
 bash
-Копіювати код
 git clone https://github.com/yourusername/base-tipjar.git
 cd base-tipjar
 npm install
@@ -77,17 +74,4 @@ Deployed by: 0x87204f681de62581311b05ebf9fdd91c3fcd39a1
 🧾 Notes
 This project was built as part of the Base Builders initiative and integrated into Talent Protocol as a verified on-chain builder contribution.
 
-yaml
-Копіювати код
-
 ---
-
-✅ **Next Steps:**
-1. Save this as `README.md` in your project root.  
-2. Create a `.env.example` (I can generate it next so you don’t expose your real keys).  
-3. Then run:
-   ```bash
-   git add .
-   git commit -m "docs: add verified README and project metadata"
-   git push origin master
-Once it’s live on GitHub — you can safely link it in your Talent Protocol profile to increase your Builder Score.
