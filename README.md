@@ -49,7 +49,7 @@ function setOwner(address newOwner) external;
 function owner() external view returns (address);
 ```
 
-💬 Example Use Case
+💬 **Example Use Case**
 A user sends 0.01 ETH with a message:
 
 “Thanks for the great content!”
@@ -60,7 +60,7 @@ solidity
 event Tipped(address from, uint256 amount, string message);
 Later, the owner calls withdraw() to collect accumulated tips.
 ```
-🧱 Repository Structure
+🧱 **Repository Structure**
 ```
 bash
 contracts/BaseTipJar.sol    # main smart contract
@@ -69,7 +69,7 @@ scripts/deploy.js           # deployment script
 package.json
 README.md
 ```
-⚙️ Environment Configuration
+⚙️ **Environment Configuration**
 Copy .env.example → .env and fill in the following values:
 ```
 bash
@@ -78,13 +78,13 @@ BASE_RPC=https://mainnet.base.org
 # Optional: predefined owner (or leave blank to use msg.sender)
 #OWNER_ADDRESS=0x0000000000000000000000000000000000000000
 ```
-Explanation:
+🧾**Explanation:**
 
 PRIVATE_KEY — wallet that deploys the contract
 BASE_RPC — Base Mainnet RPC endpoint
 OWNER_ADDRESS — optional, pre-defined owner
 
-💡 How to Interact
+💡 **How to Interact**
 ### Using Node.js (ethers.js)
 ```
 js
@@ -103,8 +103,8 @@ js
 await tipJar.withdraw();
 ```
 ## 👤 Author
-Deployed by: 0x87204f681de62581311b05ebf9fdd91c3fcd39a1
-Verified on Base Mainnet — open for contributions, PRs and forks.
+**Deployed by:** 0x87204f681de62581311b05ebf9fdd91c3fcd39a1
+**Verified on Base Mainnet** — open for contributions, PRs and forks.
 
 ## 🧾 Notes
 This project was developed as part of the Base Builders initiative and integrated into Talent Protocol as a verified on-chain builder contribution.
