@@ -41,6 +41,7 @@ The owner can later withdraw collected funds or update the payout address.
 
 ## 🧠 Contract Overview (Solidity)
 
+```
 solidity
 function tip(string calldata message_) external payable;
 function withdraw() external;
@@ -97,7 +98,7 @@ await tipJar.tip("Thanks for the amazing content!", {
 js
 // Withdraw collected tips
 await tipJar.withdraw();
-
+```
 ## 👤 Author
 Deployed by: 0x87204f681de62581311b05ebf9fdd91c3fcd39a1
 Verified on Base Mainnet — open for contributions, PRs and forks.
