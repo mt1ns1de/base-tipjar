@@ -106,6 +106,7 @@ await tipJar.withdraw();
 ```
 ## 👤 Author
 **Deployed by:** 0x87204f681de62581311b05ebf9fdd91c3fcd39a1
+
 **Verified on Base Mainnet** — open for contributions, PRs and forks.
 
 ## 🧾 Notes
