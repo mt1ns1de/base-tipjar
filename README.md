@@ -50,6 +50,7 @@ function owner() external view returns (address);
 ```
 
 💬 **Example Use Case**
+
 A user sends 0.01 ETH with a message:
 
 “Thanks for the great content!”
