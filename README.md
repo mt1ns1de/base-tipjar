@@ -70,7 +70,8 @@ package.json
 README.md
 ```
 ⚙️ **Environment Configuration**
-//Copy .env.example → .env and fill in the following values:
+
+Copy .env.example → .env and fill in the following values:
 ```
 bash
 PRIVATE_KEY=0xYOUR_PRIVATE_KEY_HERE
