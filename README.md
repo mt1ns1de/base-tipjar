@@ -41,7 +41,7 @@ The owner can later withdraw collected funds or update the payout address.
 
 ## 🧠 Contract Overview (Solidity)
 
-```solidity
+solidity
 function tip(string calldata message_) external payable;
 function withdraw() external;
 function setOwner(address newOwner) external;
@@ -64,14 +64,16 @@ scripts/deploy.js           # deployment script
 .env.example                # environment configuration template
 package.json
 README.md
+
 ⚙️ Environment Configuration
-Copy .env.example → .env and fill in:
+Copy .env.example → .env and fill in the following values:
 
 bash
 PRIVATE_KEY=0xYOUR_PRIVATE_KEY_HERE
 BASE_RPC=https://mainnet.base.org
 # Optional: predefined owner (or leave blank to use msg.sender)
 #OWNER_ADDRESS=0x0000000000000000000000000000000000000000
+
 Explanation:
 
 PRIVATE_KEY — wallet that deploys the contract
@@ -79,7 +81,8 @@ BASE_RPC — Base Mainnet RPC endpoint
 OWNER_ADDRESS — optional, pre-defined owner
 
 💡 How to Interact
-Using Node.js (ethers.js)
+### Using Node.js (ethers.js)
+
 js
 // Send a tip
 const tipJar = new ethers.Contract(
@@ -94,3 +97,11 @@ await tipJar.tip("Thanks for the amazing content!", {
 js
 // Withdraw collected tips
 await tipJar.withdraw();
+
+## 👤 Author
+Deployed by: 0x87204f681de62581311b05ebf9fdd91c3fcd39a1
+Verified on Base Mainnet — open for contributions, PRs and forks.
+
+## 🧾 Notes
+This project was developed as part of the Base Builders initiative and integrated into Talent Protocol as a verified on-chain builder contribution.
+
