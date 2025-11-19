@@ -1,0 +1,9 @@
+{
+  "ecosystem": "base-tip-jar",
+  "repositories": [
+    {
+      "name": "base-tipjar",
+      "url": "https://github.com/mt1ns1de/base-tipjar"
+    }
+  ]
+}
